@@ -1,0 +1,59 @@
+package io.javabrains.reactiveworkshop;
+
+public class Foo {
+    private Object lock;
+    private boolean oneDone = false;
+    private boolean twoDone = false;
+
+    public Foo() {
+        lock = new Object();
+    }
+
+    public void first(Runnable printFirst) throws InterruptedException {
+
+        // printFirst.run() outputs "first". Do not change or remove this line.
+        synchronized (lock) {
+            printFirst.run();
+            oneDone = true;
+            lock.notifyAll();
+
+        }
+    }
+
+
+    public void second(Runnable printSecond) throws InterruptedException {
+
+        // printSecond.run() outputs "second". Do not change or remove this line.
+        synchronized (lock) {
+            while (!oneDone) {
+                lock.wait();
+            }
+            ;
+            printSecond.run();
+            twoDone = true;
+            lock.notifyAll();
+
+        }
+
+
+    }
+
+    public void third(Runnable printThird) throws InterruptedException {
+
+        // printThird.run() outputs "third". Do not change or remove this line.
+        synchronized (lock) {
+            while (!twoDone) {
+                lock.wait();
+            }
+            ;
+            printThird.run();
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+
+    }
+}
