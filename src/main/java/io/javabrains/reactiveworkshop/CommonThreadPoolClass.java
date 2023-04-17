@@ -21,6 +21,8 @@ public class CommonThreadPoolClass {
 
         CompletableFuture.allOf(((List<?>) futures).toArray(CompletableFuture[]::new)).join();
         System.out.println("Processed in " + Duration.ofNanos(System.nanoTime() - start).toSeconds() + " sec");
+
+
     }
 
     private static void blockingOperation() {

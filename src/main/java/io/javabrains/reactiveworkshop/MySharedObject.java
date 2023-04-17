@@ -1,5 +1,8 @@
 package io.javabrains.reactiveworkshop;
 
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
 public class MySharedObject {
 
     //static variable pointing to instance of MySharedObject
@@ -15,7 +18,10 @@ public class MySharedObject {
 
     public int get() {
         int x = 10;
+        BlockingQueue blockingQueue = new LinkedBlockingQueue();
+
         return x;
+
 
     }
 
