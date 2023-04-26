@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/FlywightDP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MultiThreadedRequestParellel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyMemoryLeak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/SpeedMeasure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/TaskExecutionWebServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/TaskExecution_6_1Sequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/CommonThreadPoolClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/CommonThreadPoolClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MySharedObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MySharedObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -66,9 +72,9 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyThreadExecute">
-    <configuration name="Core1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Core1" />
+  <component name="RunManager" selected="Application.SpeedMeasure">
+    <configuration name="FlywightDP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.FlywightDP" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Emp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.Emp" />
+    <configuration name="MultiThreadedRequestParellel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MultiThreadedRequestParellel" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MyReference" />
+    <configuration name="SpeedMeasure" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.SpeedMeasure" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyThreadExecute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MyThreadExecute" />
+    <configuration name="TaskExecutionWebServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.TaskExecutionWebServer" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
@@ -119,8 +125,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadConfinementUsingThreadLocal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.ThreadConfinementUsingThreadLocal" />
+    <configuration name="TaskExecution_6_1Sequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.TaskExecution_6_1Sequence" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
@@ -134,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyThreadExecute" />
-        <item itemvalue="Application.Core1" />
-        <item itemvalue="Application.Emp" />
-        <item itemvalue="Application.ThreadConfinementUsingThreadLocal" />
-        <item itemvalue="Application.MyReference" />
+        <item itemvalue="Application.SpeedMeasure" />
+        <item itemvalue="Application.FlywightDP" />
+        <item itemvalue="Application.TaskExecutionWebServer" />
+        <item itemvalue="Application.MultiThreadedRequestParellel" />
+        <item itemvalue="Application.TaskExecution_6_1Sequence" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681303477188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="c">
+      <created>1681753514457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681753514457</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
