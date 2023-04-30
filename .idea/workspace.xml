@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/FlywightDP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MultiThreadedRequestParellel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyMemoryLeak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/SpeedMeasure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/TaskExecutionWebServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/TaskExecution_6_1Sequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/DemoClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyEqualTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyEqualTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyMemoryLeak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyMemoryLeak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/TaskExecutionWebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/TaskExecutionWebServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +67,16 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.javabrains.reactiveworkshop" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SpeedMeasure">
-    <configuration name="FlywightDP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.FlywightDP" />
+  <component name="RunManager" selected="Application.DemoClass">
+    <configuration name="DemoClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.DemoClass" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +88,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiThreadedRequestParellel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MultiThreadedRequestParellel" />
+    <configuration name="DemoClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.DemoClass" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MyClass" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyEqualTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MyEqualTest" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
@@ -125,26 +153,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskExecution_6_1Sequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.TaskExecution_6_1Sequence" />
-      <module name="reactive-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SpeedMeasure" />
-        <item itemvalue="Application.FlywightDP" />
+        <item itemvalue="Application.DemoClass" />
+        <item itemvalue="Application.DemoClass" />
+        <item itemvalue="Application.MyEqualTest" />
         <item itemvalue="Application.TaskExecutionWebServer" />
-        <item itemvalue="Application.MultiThreadedRequestParellel" />
-        <item itemvalue="Application.TaskExecution_6_1Sequence" />
+        <item itemvalue="Application.SpeedMeasure" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681753514457</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="c">
+      <created>1682533766658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682533766658</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

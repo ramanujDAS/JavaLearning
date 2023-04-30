@@ -21,7 +21,7 @@ public class TaskExecutionWebServer {
                 public void run() {
                     try {
                         taskExecutionWebServer.handleRequest(connection);
-                        connection.getOutputStream().write(("HTTP/1.1 200 OK\r\n" + "Content-Type: text/html\r\n\r\n" + "<html><head></head><body><h1>Hello</h1></body></html>").getBytes());
+                        connection.getOutputStream().write(("HTTP/1.1 412  OK\r\n" + "Content-Type: text/html\r\n\r\n" + "<html><head></head><body><h1>Hello</h1></body></html>").getBytes());
 
                         connection.shutdownOutput();
                     } catch (InterruptedException e) {
