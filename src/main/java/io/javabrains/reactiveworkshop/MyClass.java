@@ -38,6 +38,18 @@ final class PhoneNumber implements Comparable {
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        if (!(o instanceof PhoneNumber)) throw new RuntimeException();
+
+        PhoneNumber ph = (PhoneNumber) o;
+        if (ph.areaCode == this.areaCode) return 0;
+        else if (this.areaCode > ph.areaCode) return 1;
+        else return -1;
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "areaCode :" + areaCode + " prefix: " + prefix + " linenum :" + lineNum;
     }
 }
