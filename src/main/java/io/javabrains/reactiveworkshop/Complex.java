@@ -1,6 +1,6 @@
 package io.javabrains.reactiveworkshop;
 
-public final class Complex implements Comparable {
+public final class Complex {
     private final double re;
     private final double im;
 
@@ -55,19 +55,7 @@ public final class Complex implements Comparable {
         return "(" + re + " + " + im + "i)";
     }
 
-    @Override
-    public int compareTo(Object o) {
-        if (o == this)
-            return 0;
-        if (!(o instanceof Complex))
-            throw new RuntimeException();
-        Complex c = (Complex) o;
-        int cmp1 = Double.compare(this.re, c.re);
-        int cmp2 = Double.compare(this.im, c.im);
 
-        //case handling
-        return 0;
-    }
 }
 
 

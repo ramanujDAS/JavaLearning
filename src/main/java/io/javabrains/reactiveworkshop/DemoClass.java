@@ -2,13 +2,11 @@ package io.javabrains.reactiveworkshop;
 
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
 
 public class DemoClass {
     public static void main(String[] args) {
 
-        HashMap<PhoneNumber, String> map = new HashMap<>();
+ /*       HashMap<PhoneNumber, String> map = new HashMap<>();
         map.put(new PhoneNumber(707, 867, 5309), "ramanuj");
 
         System.out.println(map.get(new PhoneNumber(707, 867, 5309)));
@@ -29,9 +27,11 @@ public class DemoClass {
         System.out.println(x.hashCode());
         x = 6;
         System.out.println(x.hashCode());
-        //Integer y = 5;
+        //Integer y = 5;*/
+        Complex complex1 = new Complex(1.0, 2.0);
+        Complex complex2 = new Complex(3.0, 4.0);
+        ArrayList<Complex> list = new ArrayList<>();
 
 
-        // System.out.println();
     }
 }
