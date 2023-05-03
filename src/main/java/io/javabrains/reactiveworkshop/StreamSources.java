@@ -1,5 +1,7 @@
 package io.javabrains.reactiveworkshop;
 
+import io.javabrains.reactiveworkshop.reactive.User;
+
 import java.util.stream.Stream;
 
 /**

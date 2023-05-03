@@ -1,6 +1,4 @@
-package io.javabrains.reactiveworkshop;
-
-import reactor.core.publisher.Flux;
+package io.javabrains.reactiveworkshop.reactive;
 
 import java.io.IOException;
 

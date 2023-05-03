@@ -1,5 +1,6 @@
 package io.javabrains.reactiveworkshop;
 
+import io.javabrains.reactiveworkshop.reactive.User;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

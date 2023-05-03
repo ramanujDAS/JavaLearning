@@ -1,5 +1,7 @@
 package io.javabrains.reactiveworkshop;
 
+import io.javabrains.reactiveworkshop.reactive.type;
+
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;

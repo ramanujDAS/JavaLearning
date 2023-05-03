@@ -1,4 +1,4 @@
-package io.javabrains.reactiveworkshop;
+package io.javabrains.reactiveworkshop.reactive;
 
 /**
  * This class is a sample custom Java type used in the exercises.

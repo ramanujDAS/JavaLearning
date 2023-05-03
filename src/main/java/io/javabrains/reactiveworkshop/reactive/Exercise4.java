@@ -1,4 +1,4 @@
-package io.javabrains.reactiveworkshop;
+package io.javabrains.reactiveworkshop.reactive;
 
 import java.io.IOException;
 
