@@ -21,6 +21,12 @@ public class MyHashSet<E> extends HashSet<E> {
         return super.add(e);
     }
 
+    /**
+     * @param c collection containing elements to be added to this collection
+     * @return
+     * @implSpec
+     */
+
     @Override
     public boolean addAll(Collection<? extends E> c) {
         addCount += c.size();
