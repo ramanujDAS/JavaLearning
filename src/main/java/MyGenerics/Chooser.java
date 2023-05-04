@@ -48,6 +48,10 @@ public class Chooser<T> {
          * chnage the function  with bounded wildcard
          */
 
+        Set<Integer> integers = Set.of(1, 3, 5);
+        Set<Double> doubles = Set.of(2.0, 4.0, 6.0);
+        Set<Number> numbers = union(integers, doubles);
+        System.out.println(numbers);
 
     }
 
@@ -57,9 +61,10 @@ public class Chooser<T> {
     /**
      * The type parameter list, which declares the type parameters, goes between a method’s modifiers and its return type
      **/
-    public static <E> Set<E> union(Set<E> s1, Set<E> s2) {
-        Set<E> result = new HashSet<>(s1);
+    public static <T> Set<T> union(Set<? extends T> s1, Set<? extends T> s2) {
+        Set<T> result = new HashSet<>(s1);
         result.addAll(s2);
+        
         return result;
     }
 }
