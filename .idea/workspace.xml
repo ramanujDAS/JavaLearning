@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Super.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/ArraySubType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/reactive/MyDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGenerics/Chooser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGenerics/test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,7 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArraySubType">
+  <component name="RunManager" selected="Application.Chooser">
     <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.reactive.A" />
       <module name="reactive-example" />
@@ -100,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.DemoClass" />
+    <configuration name="Chooser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyGenerics.Chooser" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.javabrains.reactiveworkshop.reactive.*" />
+          <option name="PATTERN" value="MyGenerics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,20 +138,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sub" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sub" />
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyGenerics.test1" />
       <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyGenerics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Chooser" />
+        <item itemvalue="Application.test1" />
         <item itemvalue="Application.ArraySubType" />
         <item itemvalue="Application.A" />
         <item itemvalue="Application.MyHashSet" />
-        <item itemvalue="Application.Sub" />
-        <item itemvalue="Application.DemoClass" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683098022905</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="c">
+      <created>1683182871633</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683182871633</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
