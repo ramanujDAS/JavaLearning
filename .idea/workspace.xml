@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyGenerics/Chooser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyGenerics/test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyGenerics/Stack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGenerics/Chooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGenerics/Chooser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyGenerics/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyGenerics/test1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Chooser">
+  <component name="RunManager" selected="Application.Stack">
     <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.reactive.A" />
       <module name="reactive-example" />
@@ -125,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHashSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MyHashSet" />
+    <configuration name="Stack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyGenerics.Stack" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
+          <option name="PATTERN" value="MyGenerics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Stack" />
         <item itemvalue="Application.Chooser" />
         <item itemvalue="Application.test1" />
         <item itemvalue="Application.ArraySubType" />
         <item itemvalue="Application.A" />
-        <item itemvalue="Application.MyHashSet" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683182871633</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="c">
+      <created>1683187856067</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683187856067</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

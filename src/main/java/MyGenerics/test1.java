@@ -1,6 +1,7 @@
 package MyGenerics;
 
 import java.util.Collections;
+import java.util.Stack;
 
 public class test1 {
     private static Collections list;
@@ -17,7 +18,7 @@ public class test1 {
         intArray[0] = "adbjcadjbc";
 
         // List<String>[] stringLists = new List<String>[1];
-
+        Stack<Integer> st = new Stack<>();
         // List<Object> ol = new ArrayList<Long>(); // compile time
         //ol.add("I don't fit in");
     }
