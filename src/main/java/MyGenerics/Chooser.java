@@ -34,13 +34,28 @@ public class Chooser<T> {
         Set<Integer> s1 = new HashSet<>();
         Set<Integer> s2 = new HashSet<>();
         Collection<Integer> set = Chooser.union(s1, s2);
+
+        /**
+         * why we use bounded wildcard check below problem
+         */
+        Set<String> guys = Set.of("Tom", "Dick", "Harry");
+        Set<String> stooges = Set.of("Larry", "Moe", "Curly");
+        Set<String> aflCio = union(guys, stooges);
+
+        System.out.println(aflCio);
+        /**
+         * now it work only for String generics
+         * chnage the function  with bounded wildcard
+         */
+
+
     }
 
     //non generics throw uncheck error
     //to make any generic method
 
     /**
-     * Thetypeparameter list, which declares the type parameters, goesbetween a method’s modifiers and its return type
+     * The type parameter list, which declares the type parameters, goes between a method’s modifiers and its return type
      **/
     public static <E> Set<E> union(Set<E> s1, Set<E> s2) {
         Set<E> result = new HashSet<>(s1);
