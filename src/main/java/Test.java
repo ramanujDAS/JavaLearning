@@ -1,21 +1,21 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Test {
 
     public static void main(String[] args) {
-        int n = 12;
-        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                + "0123456789"
-                + "abcdefghijklmnopqrstuvxyz";
 
+        System.out.println(getImmediateNextMonth(5));
+    }
 
-        StringBuilder sb = new StringBuilder(n);
-
-        for (int i = 0; i < n; i++) {
-            int index
-                    = (int) (AlphaNumericString.length()
-                    * (Math.random()));
-            sb.append(AlphaNumericString
-                    .charAt(index));
+    public static String getImmediateNextMonth(int date) {
+        LocalDate today = LocalDate.now();
+        LocalDate nextMonth = today.withDayOfMonth(date);
+        if (today.getDayOfMonth() >= date) {
+            nextMonth = nextMonth.plusMonths(1);
+            return nextMonth.format(DateTimeFormatter.ISO_LOCAL_DATE);
+        } else {
+            return nextMonth.format(DateTimeFormatter.ISO_LOCAL_DATE);
         }
-        System.out.println(sb.toString());
     }
 }
