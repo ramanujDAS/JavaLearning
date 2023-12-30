@@ -2,14 +2,14 @@ import java.time.Instant;
 
 /*Construtor call super */
 
-public class Super {
+public class Super extends Parent {
 
     public Super() {
         overrideMe();
     }
 
     public void overrideMe() {
-
+        System.out.println("Super");
     }
 
 }
@@ -23,11 +23,19 @@ class Sub extends Super {
 
     @Override
     public void overrideMe() {
-        System.out.println(instant);
+        System.out.println("sub");
     }
 
     public static void main(String[] args) {
-        Sub sub = new Sub();
+        Parent sub = new Sub();
         sub.overrideMe();
     }
 }
+
+class Parent {
+    
+    public void overrideMe() {
+        System.out.println("parent");
+    }
+}
+

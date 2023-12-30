@@ -38,20 +38,20 @@ public class Chooser<T> {
         /**
          * why we use bounded wildcard check below problem
          */
-        Set<String> guys = Set.of("Tom", "Dick", "Harry");
-        Set<String> stooges = Set.of("Larry", "Moe", "Curly");
-        Set<String> aflCio = union(guys, stooges);
-
-        System.out.println(aflCio);
+//        Set<String> guys = Set.of("Tom", "Dick", "Harry");
+//        Set<String> stooges = Set.of("Larry", "Moe", "Curly");
+//        Set<String> aflCio = union(guys, stooges);
+//
+//        System.out.println(aflCio);
         /**
          * now it work only for String generics
          * chnage the function  with bounded wildcard
          */
 
-        Set<Integer> integers = Set.of(1, 3, 5);
-        Set<Double> doubles = Set.of(2.0, 4.0, 6.0);
-        Set<Number> numbers = union(integers, doubles);
-        System.out.println(numbers);
+        // Set<Integer> integers = Set.of(1, 3, 5);
+        // Set<Double> doubles = Set.of(2.0, 4.0, 6.0);
+        // Set<Number> numbers = union(integers, doubles);
+        //  System.out.println(numbers);
 
     }
 
@@ -64,7 +64,7 @@ public class Chooser<T> {
     public static <T> Set<T> union(Set<? extends T> s1, Set<? extends T> s2) {
         Set<T> result = new HashSet<>(s1);
         result.addAll(s2);
-        
+
         return result;
     }
 }

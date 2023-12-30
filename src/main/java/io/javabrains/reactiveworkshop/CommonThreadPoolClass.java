@@ -1,6 +1,5 @@
 package io.javabrains.reactiveworkshop;
 
-import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ForkJoinPool;
@@ -17,10 +16,10 @@ public class CommonThreadPoolClass {
         long start = System.nanoTime();
         List<CompletableFuture<Void>> futures = IntStream.range(0, 100)
                 .mapToObj(i -> CompletableFuture.runAsync(CommonThreadPoolClass::blockingOperation))
-                .collect(Collectors.toUnmodifiableList());
+                .collect(Collectors.toList());
 
-        CompletableFuture.allOf(((List<?>) futures).toArray(CompletableFuture[]::new)).join();
-        System.out.println("Processed in " + Duration.ofNanos(System.nanoTime() - start).toSeconds() + " sec");
+        // CompletableFuture.allOf(((List<?>) futures).toArray(CompletableFuture[]::new)).join();
+        //  System.out.println("Processed in " + Duration.ofNanos(System.nanoTime() - start).toSeconds() + " sec");
 
 
     }

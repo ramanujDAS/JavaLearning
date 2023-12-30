@@ -2,7 +2,6 @@ package io.javabrains.reactiveworkshop;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 
 /*
  *inheritance issue over composition
@@ -39,7 +38,7 @@ public class MyHashSet<E> extends HashSet<E> {
 
     public static void main(String[] args) {
         MyHashSet<String> s = new MyHashSet<>();
-        s.addAll(List.of("Ramanuj", "Navin", "Sunny"));
+//        s.addAll(List.of("Ramanuj", "Navin", "Sunny"));
         System.out.println(s.getAddCount());
     }
 }
