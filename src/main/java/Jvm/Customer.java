@@ -34,5 +34,10 @@ public class Customer {
         this.expense = expense;
     }
 
+    @Override
+    protected void finalize() throws Throwable {
+        //whenever Gc called this
+        System.out.println("being garbage collected :" + this.name);
 
+    }
 }
