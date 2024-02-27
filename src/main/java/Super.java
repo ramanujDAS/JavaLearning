@@ -29,13 +29,31 @@ class Sub extends Super {
     public static void main(String[] args) {
         Parent sub = new Sub();
         sub.overrideMe();
+
+        B a = new B();
+        a.var1 = 10;
+        System.out.println(a);
     }
 }
 
 class Parent {
-    
+
     public void overrideMe() {
         System.out.println("parent");
+    }
+}
+
+
+class A {
+    int var1;
+}
+
+class B extends A {
+    @Override
+    public String toString() {
+        return "B{" +
+                "var1=" + var1 +
+                '}';
     }
 }
 

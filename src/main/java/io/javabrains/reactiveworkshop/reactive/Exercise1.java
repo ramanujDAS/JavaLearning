@@ -9,11 +9,12 @@ public class Exercise1 {
         // Use StreamSources.intNumbersStream() and StreamSources.userStream()
 
         // Print all numbers in the intNumbersStream stream
+
 //        String list = StreamSources.intNumbersStream().filter(x -> {
-//           // System.out.println(x);
+//            System.out.println(x);
 //            return true;
 //        }).toList().toString();
-//        // System.out.println(list);
+//        System.out.println(list);
 
         // Print numbers from intNumbersStream that are less than 5
         // TODO: Write code here

@@ -1,12 +1,11 @@
 package Jvm;
 
-import java.lang.instrument.Instrumentation;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyGCTest {
-    private static volatile Instrumentation globalInstrumentation;
 
+    //decreaase -Xmx to 10MB then GC will run automatically
     public static void main(String[] args) throws InterruptedException {
 
         Runtime runtime = Runtime.getRuntime();
@@ -33,10 +32,10 @@ public class MyGCTest {
         System.gc();
         Thread.sleep(2000);
         availableByte = runtime.freeMemory();
-        System.out.println("free memory after  derefrence GC : " + availableByte / 1024 / 1024);
+        System.out.println("free memory after  dereference GC : " + availableByte / 1024 / 1024);
 
-        Thread.sleep(2000);
-        System.out.println("free memory after  derefrence GC after 4s: " + availableByte / 1024 / 1024);
+        Thread.sleep(10000);
+        System.out.println("free memory after  dereference GC after 4s: " + availableByte / 1024 / 1024);
 
 
     }

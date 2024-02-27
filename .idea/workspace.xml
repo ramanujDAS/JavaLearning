@@ -5,9 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/CombinedNumbersTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/FibonnaciNumbersTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/NumberChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/PrimeNumbersTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ResizeArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StringDeduplication/MyClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadOddEven/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadOddEven/ThreadCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cpuCache/MyCpuCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myclassloader/CustomClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myclassloader/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/package1/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/package1/TestStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/package2/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/package2/TestStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/CustomerHarnessMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/CustomerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/GenerateCustomerTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/ProcessCustomerTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Jvm/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jvm/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Jvm/MyGCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jvm/MyGCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Super.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mypackage/TestStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/reactive/Exercise1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/reactive/Exercise1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +88,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Explorememory/escapingRefrence" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Fibonacci" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -74,22 +98,25 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/Fibonacci" />
+      <recent name="$PROJECT_DIR$/src/main/java/softLeaks" />
+      <recent name="$PROJECT_DIR$/src/main/java/SoftLeaks" />
       <recent name="$PROJECT_DIR$/src/main/java/Explorememory/escapingRefrence" />
       <recent name="$PROJECT_DIR$/src/main/java/Explorememory/chapter05" />
-      <recent name="$PROJECT_DIR$/src/main/java/JVMOptimisationPerformance" />
-      <recent name="$PROJECT_DIR$/src/main/java/JVMOptimisationPerformance/" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="package2" />
+      <recent name="package1" />
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyGCTest">
-    <configuration name="HeapStackTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Explorememory.chapter05.HeapStackTest" />
+  <component name="RunManager" selected="Application.MyCpuCache">
+    <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="softLeaks.Customer" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Explorememory.chapter05.*" />
+          <option name="PATTERN" value="softLeaks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Explorememory.escapingRefrence.Main" />
+    <configuration name="CustomerHarnessMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="softLeaks.CustomerHarnessMain" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Explorememory.escapingRefrence.*" />
+          <option name="PATTERN" value="softLeaks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +137,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyGCTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MyCpuCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cpuCache.MyCpuCache" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cpuCache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyGCTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Jvm.MyGCTest" />
       <module name="reactive-example" />
+      <option name="VM_PARAMETERS" value="-Xmx10m" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Jvm.*" />
@@ -139,22 +180,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyThreadExecute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.javabrains.reactiveworkshop.MyThreadExecute" />
+    <configuration name="ResizeArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ResizeArrayList" />
       <module name="reactive-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.javabrains.reactiveworkshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test2" />
+    <configuration name="ThreadCall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadOddEven.ThreadCall" />
       <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ThreadOddEven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,19 +213,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.MyMainStringPool" />
-      <item itemvalue="Application.HeapStackTest" />
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.MyThreadExecute" />
-      <item itemvalue="Application.Test2" />
       <item itemvalue="Application.MyGCTest" />
+      <item itemvalue="Application.ThreadCall" />
+      <item itemvalue="Application.CustomerHarnessMain" />
+      <item itemvalue="Application.ResizeArrayList" />
+      <item itemvalue="Application.Customer" />
+      <item itemvalue="Application.MyCpuCache" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyGCTest" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.MyThreadExecute" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.HeapStackTest" />
+        <item itemvalue="Application.MyCpuCache" />
+        <item itemvalue="Application.Customer" />
+        <item itemvalue="Application.ResizeArrayList" />
+        <item itemvalue="Application.CustomerHarnessMain" />
+        <item itemvalue="Application.ThreadCall" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705130182377</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="c">
+      <created>1705142588864</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1705142588864</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

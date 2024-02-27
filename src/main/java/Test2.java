@@ -1,4 +1,3 @@
-import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -10,32 +9,16 @@ public class Test2 {
     public static int SIB_BPI_CUT_OFF_DATE = 4;
 
     public static void main(String[] args) {
-        LocalDate date = LocalDate.parse("2024-03-02");
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 
-        LocalDate today = LocalDate.now();
-        LocalDate nextMonth = date.withDayOfMonth(5);
-        System.out.println(nextMonth);
-        Date dateEmi = Date.from(date.atStartOfDay(ZoneId.systemDefault()).toInstant());
-        System.out.println("date :" + date);
-        System.out.println("bpi date: " + getBpiDate(5));
-        System.out.println("emi date: " + getEmiDate(5));
-
-        System.out.println(LocalDate.now().getDayOfMonth());
-
+        try {
+            getBpiDate();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
-    public static String getBpiDate(LocalDate date, int day) {
-        LocalDate today = date;
-        LocalDate nextMonth = today.withDayOfMonth(day);
-        if (isBrokenPeriodRequired(today)) {
-            if (today.getDayOfMonth() >= 1 && today.getDayOfMonth() <= SIB_BPI_CUT_OFF_DATE) {
-                return nextMonth.format(DateTimeFormatter.ISO_LOCAL_DATE);
-            }
-            return nextMonth.plusMonths(1).format(DateTimeFormatter.ISO_LOCAL_DATE);
-        }
-
-        return null;
+    public static String getBpiDate() throws Exception {
+        throw new RuntimeException("fhhd");
     }
 
     public static boolean isBrokenPeriodRequired(LocalDate date) {
