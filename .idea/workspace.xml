@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/CombinedNumbersTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/FibonnaciNumbersTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/NumberChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci/PrimeNumbersTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ResizeArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StringDeduplication/MyClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadOddEven/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadOddEven/ThreadCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cpuCache/MyCpuCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myclassloader/CustomClassLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myclassloader/TestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/package1/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/package1/TestStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/package2/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/package2/TestStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/CustomerHarnessMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/CustomerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/GenerateCustomerTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/softLeaks/ProcessCustomerTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Jvm/MyGCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jvm/MyGCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Super.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mypackage/TestStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/reactive/Exercise1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/reactive/Exercise1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cpuCache/MyCpuCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cpuCache/MyCpuCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,7 +333,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705142588864</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="c">
+      <created>1709020332773</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709020332773</updated>
+    </task>
+    <task id="LOCAL-00019" summary="c">
+      <created>1709020425872</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709020425872</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

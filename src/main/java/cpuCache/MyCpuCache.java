@@ -43,7 +43,19 @@ public class MyCpuCache {
         }
         System.out.println(new Date().getTime() - startTime.getTime());
 
-
+        Thread.sleep(2000);
+        startTime = new Date();
+        int x = 0;
+        int[] A = new int[100000000];
+        for (int i = 0; i < 100000000; i++) {
+            x = A[i];
+        }
+        System.out.println(new Date().getTime() - startTime.getTime());
+        Thread.sleep(2000);
+        for (int i = 0; i < 100000000; i = i + 16) {
+            x = A[i];
+        }
+        System.out.println(new Date().getTime() - startTime.getTime());
         // 4 times faster  if you  access sequential data from memory to cpu   because of cach system in L1 L2 L3
     }
 }
