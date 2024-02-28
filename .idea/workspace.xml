@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExceptionTest/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExceptionTest/MyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExceptionTest/MyException2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Reflaction/MyRef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cpuCache/MyCpuCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cpuCache/MyCpuCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,20 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyCpuCache">
+  <component name="RunManager" selected="Application.A">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ExceptionTest.A" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ExceptionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="softLeaks.Customer" />
       <module name="reactive-example" />
@@ -99,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerHarnessMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="softLeaks.CustomerHarnessMain" />
+    <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringDeduplication.MyClass" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softLeaks.*" />
+          <option name="PATTERN" value="StringDeduplication.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,19 +171,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResizeArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ResizeArrayList" />
-      <module name="reactive-example" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadCall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ThreadOddEven.ThreadCall" />
+    <configuration name="MyRef" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Reflaction.MyRef" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ThreadOddEven.*" />
+          <option name="PATTERN" value="Reflaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,19 +198,19 @@
     <list>
       <item itemvalue="Application.MyMainStringPool" />
       <item itemvalue="Application.MyGCTest" />
-      <item itemvalue="Application.ThreadCall" />
-      <item itemvalue="Application.CustomerHarnessMain" />
-      <item itemvalue="Application.ResizeArrayList" />
       <item itemvalue="Application.Customer" />
       <item itemvalue="Application.MyCpuCache" />
+      <item itemvalue="Application.MyClass" />
+      <item itemvalue="Application.MyRef" />
+      <item itemvalue="Application.A" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.A" />
+        <item itemvalue="Application.MyRef" />
+        <item itemvalue="Application.MyClass" />
         <item itemvalue="Application.MyCpuCache" />
         <item itemvalue="Application.Customer" />
-        <item itemvalue="Application.ResizeArrayList" />
-        <item itemvalue="Application.CustomerHarnessMain" />
-        <item itemvalue="Application.ThreadCall" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709102455467</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="c">
+      <created>1709103057749</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709103057749</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
