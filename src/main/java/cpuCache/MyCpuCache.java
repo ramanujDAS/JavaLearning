@@ -44,18 +44,20 @@ public class MyCpuCache {
         System.out.println(new Date().getTime() - startTime.getTime());
 
         Thread.sleep(2000);
-        startTime = new Date();
+
         int x = 0;
         int[] A = new int[100000000];
+        long nanoTime = System.nanoTime();
         for (int i = 0; i < 100000000; i++) {
-            x = A[i];
+            A[i] = A[i] + 1;
         }
-        System.out.println(new Date().getTime() - startTime.getTime());
+        System.out.println(System.nanoTime() - nanoTime);
         Thread.sleep(2000);
+        nanoTime = System.nanoTime();
         for (int i = 0; i < 100000000; i = i + 16) {
-            x = A[i];
+            A[i] = A[i] + 1;
         }
-        System.out.println(new Date().getTime() - startTime.getTime());
+        System.out.println(System.nanoTime() - nanoTime);
         // 4 times faster  if you  access sequential data from memory to cpu   because of cach system in L1 L2 L3
     }
 }
