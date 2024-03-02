@@ -1,10 +1,14 @@
 package ExceptionTest;
 
+
+import java.util.Arrays;
+
 public class A {
 
     public static void main(String[] args) {
-        B a = new B();
-        a.fun();
+        Object a = new int[10];
+
+        System.out.println(a instanceof );
 
     }
 

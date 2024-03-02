@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/Json.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/JsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/MyMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/model/JsonElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/TokenType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/model/TokenLex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExceptionTest/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExceptionTest/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonParser/MyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonParser/MyMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -377,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709136611325</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="c">
+      <created>1709149030397</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709149030397</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
