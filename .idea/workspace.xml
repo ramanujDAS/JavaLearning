@@ -5,11 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/TokenType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/model/TokenLex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/TokenInterpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/TokenLex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/exception/JsonFormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/CloseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/ColonHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/ComaHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/DefaultInterpreterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/InterpreterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/OpenHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/QuotesHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/interpreter/WhiteSpaceHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JsonParser/testJson.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cat/CommandApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cat/FileRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cat/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cat/ReadFileLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cat/ReadFileN.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cat/RuntimeFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/MultiThreadedRequestParellel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/MyWebServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/RequestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/ResponseHttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/Socket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ExceptionTest/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExceptionTest/A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JsonParser/MyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonParser/MyMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonParser/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonParser/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonParser/model/JsonElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonParser/model/JsonElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonParser/model/TokenLex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyMemoryLeak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/javabrains/reactiveworkshop/MyMemoryLeak.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="Enum" />
       </list>
     </option>
@@ -66,8 +93,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Fibonacci" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/JsonParser" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -82,19 +109,24 @@
       <recent name="$PROJECT_DIR$/src/main/java/Explorememory/escapingRefrence" />
       <recent name="$PROJECT_DIR$/src/main/java/Explorememory/chapter05" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="webserver" />
       <recent name="package2" />
       <recent name="package1" />
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.A">
-    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExceptionTest.A" />
+  <component name="RunManager" selected="Application.MultiThreadedRequestParellel">
+    <configuration name="CommandApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cat.CommandApp" />
       <module name="reactive-example" />
+      <option name="PROGRAM_PARAMETERS" value="-r test1.txt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ExceptionTest.*" />
+          <option name="PATTERN" value="cat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="softLeaks.Customer" />
+    <configuration name="MultiThreadedRequestParellel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webserver.MultiThreadedRequestParellel" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softLeaks.*" />
+          <option name="PATTERN" value="webserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,19 +153,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="StringDeduplication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyCpuCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cpuCache.MyCpuCache" />
-      <module name="reactive-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cpuCache.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,12 +190,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyRef" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Reflaction.MyRef" />
+    <configuration name="ThreadCall" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadOddEven.ThreadCall" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Reflaction.*" />
+          <option name="PATTERN" value="ThreadOddEven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviewQ.mainClass" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interviewQ.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,19 +230,19 @@
     <list>
       <item itemvalue="Application.MyMainStringPool" />
       <item itemvalue="Application.MyGCTest" />
-      <item itemvalue="Application.Customer" />
-      <item itemvalue="Application.MyCpuCache" />
+      <item itemvalue="Application.CommandApp" />
+      <item itemvalue="Application.ThreadCall" />
+      <item itemvalue="Application.mainClass" />
       <item itemvalue="Application.MyClass" />
-      <item itemvalue="Application.MyRef" />
-      <item itemvalue="Application.A" />
+      <item itemvalue="Application.MultiThreadedRequestParellel" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.A" />
-        <item itemvalue="Application.MyRef" />
+        <item itemvalue="Application.MultiThreadedRequestParellel" />
+        <item itemvalue="Application.CommandApp" />
         <item itemvalue="Application.MyClass" />
-        <item itemvalue="Application.MyCpuCache" />
-        <item itemvalue="Application.Customer" />
+        <item itemvalue="Application.mainClass" />
+        <item itemvalue="Application.ThreadCall" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709149030397</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="c">
+      <created>1709397884277</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709397884277</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

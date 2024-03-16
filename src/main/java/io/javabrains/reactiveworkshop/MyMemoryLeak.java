@@ -19,7 +19,7 @@ public class MyMemoryLeak {
         ensureCapacity();
         elements[size++] = e;
 
-
+        Stack<Integer> stack = new Stack<>();
     }
 
     public Object pop() {

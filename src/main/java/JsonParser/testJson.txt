@@ -1,0 +1,8 @@
+{
+  "line1": "C1-1/23 ",
+  "line2": "Near vaishya samaj hall 1",
+  "line3": "old panvel ",
+  "state": "MAHARASHTRA",
+  "pinCode": "110001",
+  "phone": "8097313121"
+}

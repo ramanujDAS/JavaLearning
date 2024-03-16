@@ -1,14 +1,12 @@
 package ExceptionTest;
 
 
-import java.util.Arrays;
-
 public class A {
 
     public static void main(String[] args) {
         Object a = new int[10];
 
-        System.out.println(a instanceof );
+        // System.out.println(a instanceof );
 
     }
 
