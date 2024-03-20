@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -52,19 +53,22 @@ public class PortRequestHandler {
         BufferedReader bf = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         //  int read;
 
-        StringBuilder stringBuilder = new StringBuilder();
+        List<String> parseString = new ArrayList<>();
         String line;
 
         while ((line = bf.readLine()) != null && !line.isEmpty()) {
-            processLine(line);
+            parseString.add(line);
         }
-
+        if (!parseString.isEmpty()) {
+            ParseHttpRequest parser = new ParseHttpRequest();
+            parser.parsePlainRequest(parseString);
+        }
         System.out.println("connection ::" + connection.getPort() + " " + Thread.currentThread().getName());
     }
 
     private void processLine(String str) {
         String[] parts = str.split(" ");
-        
+
 
         System.out.println("method ::" + Arrays.toString(parts));
     }
