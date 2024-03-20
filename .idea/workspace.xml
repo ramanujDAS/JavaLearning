@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="c">
+    <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="sd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/resource/FileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/resource/ResourceHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/resource/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webserver/resource/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webserver/HttpBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/HttpBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webserver/DefaultResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/DefaultResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webserver/ParseHttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/ParseHttpRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webserver/PortRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/PortRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webserver/request/HttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/request/HttpRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webserver/request/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/request/HttpRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webserver/request/IHttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/request/IHttpRequestHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +40,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -62,7 +68,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.MyWebServer.executor": "Run",
-    "git-widget-placeholder": "JVMPerformance"
+    "git-widget-placeholder": "JVMPerformance",
+    "last_opened_file_path": "/Users/ramanujsingh/IdeaProjects/JavaLearning/src/main/java/webserver/resource"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -70,11 +77,11 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/webserver/resource" />
       <recent name="$PROJECT_DIR$/src/main/java/Fibonacci" />
       <recent name="$PROJECT_DIR$/src/main/java/softLeaks" />
       <recent name="$PROJECT_DIR$/src/main/java/SoftLeaks" />
       <recent name="$PROJECT_DIR$/src/main/java/Explorememory/escapingRefrence" />
-      <recent name="$PROJECT_DIR$/src/main/java/Explorememory/chapter05" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -393,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710618597849</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="sd">
+      <option name="closed" value="true" />
+      <created>1710956403483</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710956403483</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,7 +436,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="c" />
-    <option name="LAST_COMMIT_MESSAGE" value="c" />
+    <MESSAGE value="sd" />
+    <option name="LAST_COMMIT_MESSAGE" value="sd" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

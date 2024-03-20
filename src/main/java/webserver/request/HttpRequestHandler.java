@@ -1,14 +1,19 @@
 package webserver.request;
 
+import webserver.response.HttpResponse;
+
 public class HttpRequestHandler implements IHttpRequestHandler {
 
-
     @Override
-    public String processRequest(String request) {
+    public HttpResponse processRequest(HttpRequest request) {
+
+
         return null;
     }
 
-    private boolean isActionValid(String action) {
+    private boolean isActionValid(HttpRequest action) {
+
+
         return false;
     }
 }

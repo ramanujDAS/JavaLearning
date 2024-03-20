@@ -1,8 +1,10 @@
 package webserver.request;
 
+import webserver.response.HttpResponse;
+
 interface IHttpRequestHandler {
 
-    String processRequest(String request);
+    HttpResponse processRequest(HttpRequest request);
 
 
 }

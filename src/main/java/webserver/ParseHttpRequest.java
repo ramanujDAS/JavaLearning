@@ -8,9 +8,7 @@ import java.util.List;
 public class ParseHttpRequest {
 
     public void parsePlainRequest(List<String> reqList) throws IOException {
-        String requestLine;
         String[] httpParam = reqList.get(0).split(" ");
-        // Split the request line into parts\
         String body = "";
         HttpRequest httpRequest = HttpRequest
                 .builder()
@@ -20,9 +18,5 @@ public class ParseHttpRequest {
                 .build();
 
         System.out.println(httpRequest);
-
-
     }
-
-
 }
