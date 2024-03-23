@@ -1,7 +1,22 @@
 package webserver;
 
-public class HttpBody {
-    String body;
+import java.io.File;
+import java.io.Serializable;
+
+public class HttpBody implements Serializable {
+    @Override
+    public String toString() {
+        return "HttpBody{" +
+                "body='" + body + '\'' +
+                '}';
+    }
+
+    public HttpBody() {
+
+    }
+
+    private String body;
+    private File file;
 
     public HttpBody(String body) {
         this.body = body;
@@ -11,7 +26,16 @@ public class HttpBody {
         return body;
     }
 
+    public File getFile() {
+        return file;
+    }
+
     public void setBody(String body) {
         this.body = body;
     }
+
+    public void setFile(File file) {
+        this.file = file;
+    }
+
 }

@@ -1,10 +1,14 @@
 package webserver;
 
+import webserver.request.HttpRequestHandler;
+import webserver.response.HttpResponse;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,8 +37,7 @@ public class PortRequestHandler {
                 try {
                     while (true) {
                         connection = serverSocket.accept();
-                        handleRequest(connection);
-                        connection.getOutputStream().write(DefaultResponse.defaultResponse.getBytes());
+                        sendToOutputStream(connection);
                         connection.shutdownOutput();
 
                     }
@@ -46,18 +49,27 @@ public class PortRequestHandler {
         new Thread(task).start();
     }
 
-    private void handleRequest(Socket connection) throws IOException {
+    private HttpResponse handleRequest(Socket connection) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(connection.getInputStream()));
         List<String> parseString = new ArrayList<>();
         String line;
+        HttpResponse response = null;
+        ParseHttpRequest parser = new ParseHttpRequest();
+        HttpRequestHandler requestHandler = new HttpRequestHandler();
         while ((line = bf.readLine()) != null && !line.isEmpty()) {
             parseString.add(line);
         }
         if (!parseString.isEmpty()) {
-            ParseHttpRequest parser = new ParseHttpRequest();
-            parser.parsePlainRequest(parseString);
+            response = requestHandler.processRequest(parser.parsePlainRequest(parseString));
         }
-        System.out.println("connection ::" + connection.getPort() + " " + Thread.currentThread().getName());
+
+        return response;
     }
 
+    private void sendToOutputStream(Socket connection) throws IOException {
+        HttpResponse response = handleRequest(connection);
+
+        connection.getOutputStream().write((Files.readAllBytes(response.getBody().getFile().toPath())));
+        System.out.println("connection ::" + connection.getPort() + " " + Thread.currentThread().getName());
+    }
 }

@@ -5,7 +5,6 @@ import webserver.ResponseHttpStatus;
 
 public class HttpResponse {
     protected ResponseHttpStatus httpStatus;
-    protected HttpBody body;
 
     public ResponseHttpStatus getHttpStatus() {
         return httpStatus;
@@ -21,5 +20,25 @@ public class HttpResponse {
 
     public void setBody(HttpBody body) {
         this.body = body;
+    }
+
+    protected HttpBody body;
+
+    public static HttpResponse builder() {
+        return new HttpResponse();
+    }
+
+    public HttpResponse status(ResponseHttpStatus status) {
+        this.httpStatus = httpStatus;
+        return this;
+    }
+
+    public HttpResponse body(HttpBody body) {
+        this.body = body;
+        return this;
+    }
+
+    public HttpResponse build() {
+        return this;
     }
 }

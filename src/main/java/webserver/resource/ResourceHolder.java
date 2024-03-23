@@ -28,8 +28,8 @@ public class ResourceHolder {
         return resources.get(uri);
     }
 
-    public File getPage(int index) {
-        Optional<File> fileOPT = fileHandler.findFile(pageHolder.get(index));
+    public File getPage(String uri) {
+        Optional<File> fileOPT = fileHandler.findFile(pageHolder.get(getValue(uri)));
         if (fileOPT.isPresent()) return fileOPT.get();
         System.out.println("returning default error page as file address not found");
         return new File("error.html");

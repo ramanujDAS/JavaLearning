@@ -1,4 +1,4 @@
-package webserver.request;
+package webserver.request.method;
 
 
 import webserver.RequestMethod;
