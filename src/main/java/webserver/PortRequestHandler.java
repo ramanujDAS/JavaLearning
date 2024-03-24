@@ -67,9 +67,18 @@ public class PortRequestHandler {
     }
 
     private void sendToOutputStream(Socket connection) throws IOException {
-        HttpResponse response = handleRequest(connection);
 
-        connection.getOutputStream().write((Files.readAllBytes(response.getBody().getFile().toPath())));
+        try {
+            HttpResponse response = handleRequest(connection);
+            connection.getOutputStream().write(DefaultResponse.HTTPRESPONSE.getBytes());
+            connection.getOutputStream().write(DefaultResponse.HTTPOK.getBytes());
+            connection.getOutputStream().write(DefaultResponse.Header.getBytes());
+            connection.getOutputStream().write(Files.readAllBytes(response.getBody().getFile().toPath()));
+        } catch (Exception e) {
+            System.out.println("some error :: " + e.getMessage());
+
+        }
+
         System.out.println("connection ::" + connection.getPort() + " " + Thread.currentThread().getName());
     }
 }
