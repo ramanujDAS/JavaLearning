@@ -29,9 +29,12 @@ public class ResourceHolder {
     }
 
     public File getPage(String uri) {
+        if (!isContain(uri)) {
+            System.out.println("returning default error page as file address not found");
+            return new File("error.html");
+        }
         Optional<File> fileOPT = fileHandler.findFile(pageHolder.get(getValue(uri)));
-        if (fileOPT.isPresent()) return fileOPT.get();
-        System.out.println("returning default error page as file address not found");
-        return new File("error.html");
+        return fileOPT.orElseGet(() -> new File("error.html"));
+
     }
 }

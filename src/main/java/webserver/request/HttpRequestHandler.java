@@ -25,6 +25,7 @@ public class HttpRequestHandler implements IHttpRequestHandler {
         } catch (Exception e) {
             System.out.println("got some exception in HttpRequestHandler");
             response.setHttpStatus(ResponseHttpStatus.BAD_REQUEST);
+            response.setBody(new HttpBody("error found"));
             //set the proper response and httpCode
         }
         return response;

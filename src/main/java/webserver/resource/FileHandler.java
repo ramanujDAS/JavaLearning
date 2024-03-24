@@ -11,7 +11,8 @@ public class FileHandler {
 
     public static synchronized FileHandler getInstance() {
         if (fileHandler == null) {
-            return new FileHandler();
+            fileHandler = new FileHandler();
+            return fileHandler;
         } else return fileHandler;
     }
 
