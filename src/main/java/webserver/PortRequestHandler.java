@@ -88,9 +88,9 @@ public class PortRequestHandler {
 
     private String getHttpCode(HttpResponse response) {
         if (response.getHttpStatus() == null) {
-            return ResponseHttpStatus.INTERNAL_SERVER_ERROR + "\r\n";
+            return ResponseHttpStatus.INTERNAL_SERVER_ERROR + System.lineSeparator();
         }
-        return response.getHttpStatus().toString() + "\r\n";
+        return response.getHttpStatus().toString() + System.lineSeparator();
     }
 
     private String getHeaders(HttpResponse response) {
@@ -99,7 +99,7 @@ public class PortRequestHandler {
             headers = headers + HeadersValue.HTML;
         } else headers = headers + HeadersValue.TEXT;
 
-        headers += "\r\n" + "\r\n";
+        headers += System.lineSeparator() + System.lineSeparator();
         return headers;
     }
 
