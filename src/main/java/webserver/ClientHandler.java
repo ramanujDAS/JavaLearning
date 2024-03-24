@@ -34,11 +34,8 @@ class ClientHandler implements Runnable {
     }
 
     public void sendToOutputStream(Socket connection) throws IOException {
-
         try {
             HttpResponse response = handleRequest(connection);
-            String finalResposne = DefaultResponse.HTTPPROTOCOL + getHttpCode(response) + getHeaders(response);
-            System.out.println(finalResposne);
             connection.getOutputStream().write(((DefaultResponse.HTTPPROTOCOL
                     + getHttpCode(response)
                     + getHeaders(response)).getBytes()));
@@ -47,6 +44,7 @@ class ClientHandler implements Runnable {
             System.out.println("some error :: " + e.getMessage());
         }
         connection.shutdownOutput();
+        connection.close();
         System.out.println("connection ::" + connection.getPort() + " " + Thread.currentThread().getName());
     }
 

@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class PortRequestHandler {
     private String COLON = ": ";
@@ -17,7 +19,6 @@ public class PortRequestHandler {
     private void listen(ServerSocket serverSocket) {
         try {
             startThread(serverSocket);
-
         } catch (Exception e) {
             System.out.println("error in port accept PortRequestHandler::listen  " + e.getMessage());
 
@@ -27,12 +28,12 @@ public class PortRequestHandler {
     private void startThread(ServerSocket serverSocket) {
         Runnable task = () -> {
             Socket connection;
+            ExecutorService executor = Executors.newFixedThreadPool(5);
             try {
                 serverSocket.setReuseAddress(true);
                 while (true) {
                     connection = serverSocket.accept();
-                    ClientHandler handler = new ClientHandler(connection);
-                    new Thread(handler).start();
+                    executor.execute(new ClientHandler(connection));
                 }
             } catch (IOException e) {
                 throw new RuntimeException(e);
