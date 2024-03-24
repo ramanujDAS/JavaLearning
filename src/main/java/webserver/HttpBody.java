@@ -8,6 +8,7 @@ public class HttpBody implements Serializable {
     public String toString() {
         return "HttpBody{" +
                 "body='" + body + '\'' +
+                ", file=" + file +
                 '}';
     }
 

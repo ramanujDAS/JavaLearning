@@ -6,6 +6,14 @@ import webserver.ResponseHttpStatus;
 public class HttpResponse {
     protected ResponseHttpStatus httpStatus;
 
+    @Override
+    public String toString() {
+        return "HttpResponse{" +
+                "httpStatus=" + httpStatus +
+                ", body=" + body +
+                '}';
+    }
+
     public ResponseHttpStatus getHttpStatus() {
         return httpStatus;
     }

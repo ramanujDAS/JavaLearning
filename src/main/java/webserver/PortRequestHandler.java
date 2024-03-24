@@ -1,5 +1,7 @@
 package webserver;
 
+import webserver.headers.HeadersKey;
+import webserver.headers.HeadersValue;
 import webserver.request.HttpRequestHandler;
 import webserver.response.HttpResponse;
 
@@ -13,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PortRequestHandler {
+    private String COLON = ": ";
 
     public void startListener(List<ServerSocket> socketList) {
         for (ServerSocket socket : socketList) {
@@ -70,15 +73,45 @@ public class PortRequestHandler {
 
         try {
             HttpResponse response = handleRequest(connection);
-            connection.getOutputStream().write(DefaultResponse.HTTPRESPONSE.getBytes());
-            connection.getOutputStream().write(DefaultResponse.HTTPOK.getBytes());
-            connection.getOutputStream().write(DefaultResponse.Header.getBytes());
-            connection.getOutputStream().write(Files.readAllBytes(response.getBody().getFile().toPath()));
+            String finalResposne = DefaultResponse.HTTPPROTOCOL + getHttpCode(response) + getHeaders(response);
+            System.out.println(finalResposne);
+            connection.getOutputStream().write(((DefaultResponse.HTTPPROTOCOL
+                    + getHttpCode(response)
+                    + getHeaders(response)).getBytes()));
+            connection.getOutputStream().write(getBody(response));
         } catch (Exception e) {
             System.out.println("some error :: " + e.getMessage());
-
         }
 
         System.out.println("connection ::" + connection.getPort() + " " + Thread.currentThread().getName());
     }
+
+    private String getHttpCode(HttpResponse response) {
+        if (response.getHttpStatus() == null) {
+            return ResponseHttpStatus.INTERNAL_SERVER_ERROR + "\r\n";
+        }
+        return response.getHttpStatus().toString() + "\r\n";
+    }
+
+    private String getHeaders(HttpResponse response) {
+        String headers = HeadersKey.CONTENT_TYPE + COLON;
+        if (response.getBody().getFile() != null) {
+            headers = headers + HeadersValue.HTML;
+        } else headers = headers + HeadersValue.TEXT;
+
+        headers += "\r\n" + "\r\n";
+        return headers;
+    }
+
+    private byte[] getBody(HttpResponse response) throws IOException {
+        byte[] responseBody;
+        if (response.getBody().getFile() != null)
+            responseBody = Files.readAllBytes(response.getBody().getFile().toPath());
+        else {
+            responseBody = response.getBody().getBody().getBytes();
+        }
+        return responseBody;
+    }
+
+
 }

@@ -16,14 +16,15 @@ public class HttpRequestHandler implements IHttpRequestHandler {
     @Override
     public HttpResponse processRequest(HttpRequest request) {
         MethodFactory factory = MethodFactory.getInstance();
-        HttpResponse response = null;
+        HttpResponse response = new HttpResponse();
         IMethodExecutor methodExecutor = factory.getExecutor(request.getMethod());
         try {
             HttpBody body = methodExecutor.processRequest(request);
-            response = HttpResponse.builder().body(body).status(ResponseHttpStatus.ACCEPTED).build();
+            response.setBody(body);
+            response.setHttpStatus(ResponseHttpStatus.ACCEPTED);
         } catch (Exception e) {
-            System.out.println("got some exception");
-            response = HttpResponse.builder().status(ResponseHttpStatus.BAD_REQUEST).build();
+            System.out.println("got some exception in HttpRequestHandler");
+            response.setHttpStatus(ResponseHttpStatus.BAD_REQUEST);
             //set the proper response and httpCode
         }
         return response;
