@@ -2,13 +2,15 @@ package webserver;
 
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 public class MyWebServer {
     public static void main(String[] args) throws IOException {
-        startApp();
 
+        startApp();
+        System.out.println("Server started at port ::" + Arrays.toString(Port.values()));
     }
 
     public static void startApp() throws IOException {
