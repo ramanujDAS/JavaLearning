@@ -35,7 +35,7 @@ class ClientHandler implements Runnable {
 
     public void sendToOutputStream(Socket connection) throws IOException {
         try {
-            Thread.sleep(10);
+            Thread.sleep(2000);
             HttpResponse response = handleRequest(connection);
             connection.getOutputStream().write(((DefaultResponse.HTTPPROTOCOL
                     + getHttpCode(response)
