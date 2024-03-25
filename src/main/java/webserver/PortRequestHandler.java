@@ -9,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class PortRequestHandler {
-    private final boolean async = true;
+    private final boolean async = false;
 
     public void startListener(List<ServerSocket> socketList) {
         for (ServerSocket socket : socketList) {
