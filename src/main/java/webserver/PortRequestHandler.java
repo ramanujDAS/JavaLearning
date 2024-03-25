@@ -4,10 +4,12 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class PortRequestHandler {
+    private final boolean async = true;
 
     public void startListener(List<ServerSocket> socketList) {
         for (ServerSocket socket : socketList) {
@@ -26,21 +28,39 @@ public class PortRequestHandler {
 
     private void startThread(ServerSocket serverSocket) {
         Runnable task = () -> {
-            Socket connection;
-
-            ExecutorService executor = Executors.newFixedThreadPool(5);
-            try {
-                serverSocket.setReuseAddress(true);
-                while (true) {
-                    connection = serverSocket.accept();
-                    connection.setReuseAddress(true);
-                    executor.execute(new ClientHandler(connection));
+            if (async) {
+                System.out.println("starting Aysnc call");
+                startAsyncThread(serverSocket);
+            } else {
+                Socket connection;
+                ExecutorService executor = Executors.newFixedThreadPool(5);
+                try {
+                    serverSocket.setReuseAddress(true);
+                    while (true) {
+                        connection = serverSocket.accept();
+                        connection.setReuseAddress(true);
+                        executor.execute(new ClientHandler(connection));
+                    }
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
             }
         };
         new Thread(task).start();
+    }
+
+    private void startAsyncThread(ServerSocket serverSocket) {
+        try {
+
+            Socket connection;
+            while (true) {
+                connection = serverSocket.accept();
+                Socket finalConnection = connection;
+                CompletableFuture<Void> completableFuture = CompletableFuture.runAsync(() -> new Thread(new ClientHandler(finalConnection)).start());
+            }
+        } catch (IOException ie) {
+            System.out.println(ie.getClass());
+        }
     }
 
 
