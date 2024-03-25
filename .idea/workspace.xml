@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="BASIC WEBSERVER TO FETCH FILE">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webserver/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/webserver/PortRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webserver/PortRequestHandler.java" afterDir="false" />
     </list>
@@ -465,7 +466,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711313210364</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="BASIC WEBSERVER TO FETCH FILE">
+      <option name="closed" value="true" />
+      <created>1711314450462</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1711314450462</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

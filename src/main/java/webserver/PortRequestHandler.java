@@ -8,7 +8,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class PortRequestHandler {
-    private String COLON = ": ";
 
     public void startListener(List<ServerSocket> socketList) {
         for (ServerSocket socket : socketList) {
@@ -28,11 +27,13 @@ public class PortRequestHandler {
     private void startThread(ServerSocket serverSocket) {
         Runnable task = () -> {
             Socket connection;
+
             ExecutorService executor = Executors.newFixedThreadPool(5);
             try {
                 serverSocket.setReuseAddress(true);
                 while (true) {
                     connection = serverSocket.accept();
+                    connection.setReuseAddress(true);
                     executor.execute(new ClientHandler(connection));
                 }
             } catch (IOException e) {
