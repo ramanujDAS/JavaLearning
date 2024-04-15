@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="BASIC WEBSERVER TO FETCH FILE" />
+    <list default="true" id="684c8c37-4a27-4f62-9e94-e17cc2f8eb5e" name="Changes" comment="BASIC WEBSERVER TO FETCH FILE">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SelllBuy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eventLoop/model/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eventLoop/model/EventResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/eventLoop/service/EventLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stream/Frequency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stream/MyMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stream/MyStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stream/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stream/TopView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stream/functional/FunctionalInterFace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stream/functional/MyMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,12 +44,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ramanujDAS"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ramanujDAS&quot;
   }
-}]]></component>
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -45,14 +58,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="a5d7b546-5ae3-4f30-a1b7-54bf5f6af2e6" />
-        <option name="url" value="https://github.com/ramanujDAS/JavaLearning.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ramanujDAS/JavaLearning.git&quot;,
+    &quot;accountId&quot;: &quot;a5d7b546-5ae3-4f30-a1b7-54bf5f6af2e6&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar:///Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/src.zip!/java/nio/DirectByteBufferR.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/src.zip!/java/nio/DirectCharBufferRS.java" root0="SKIP_INSPECTION" />
@@ -73,17 +84,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MyWebServer.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "git-widget-placeholder": "JVMPerformance",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ramanujsingh/IdeaProjects/JavaLearning"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Frequency.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyWebServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.stream.functional.MyMain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;JVMPerformance&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ramanujsingh/IdeaProjects/JavaLearning&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="eventLoop.model" />
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -106,40 +123,13 @@
       <recent name="io.javabrains.reactiveworkshop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyWebServer">
-    <configuration name="CommandApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cat.CommandApp" />
-      <module name="reactive-example" />
-      <option name="PROGRAM_PARAMETERS" value="-r test1.txt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiThreadedRequestParellel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="webserver.MultiThreadedRequestParellel" />
+  <component name="RunManager" selected="Application.MyStream">
+    <configuration name="Frequency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stream.Frequency" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="webserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringDeduplication.MyClass" />
-      <module name="reactive-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="StringDeduplication.*" />
+          <option name="PATTERN" value="stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,6 +153,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stream.MyMain" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyMainStringPool" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Jvm.MyMainStringPool" />
       <module name="reactive-example" />
@@ -170,6 +173,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Jvm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stream.MyStream" />
+      <module name="reactive-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -190,12 +206,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="mainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interviewQ.mainClass" />
+    <configuration name="stream.functional.MyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stream.functional.MyMain" />
       <module name="reactive-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="interviewQ.*" />
+          <option name="PATTERN" value="stream.functional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,19 +222,19 @@
     <list>
       <item itemvalue="Application.MyMainStringPool" />
       <item itemvalue="Application.MyGCTest" />
-      <item itemvalue="Application.CommandApp" />
-      <item itemvalue="Application.mainClass" />
-      <item itemvalue="Application.MyClass" />
-      <item itemvalue="Application.MultiThreadedRequestParellel" />
+      <item itemvalue="Application.Frequency" />
+      <item itemvalue="Application.MyMain" />
+      <item itemvalue="Application.MyStream" />
+      <item itemvalue="Application.stream.functional.MyMain" />
       <item itemvalue="Application.MyWebServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyStream" />
+        <item itemvalue="Application.Frequency" />
+        <item itemvalue="Application.MyMain" />
+        <item itemvalue="Application.stream.functional.MyMain" />
         <item itemvalue="Application.MyWebServer" />
-        <item itemvalue="Application.MultiThreadedRequestParellel" />
-        <item itemvalue="Application.CommandApp" />
-        <item itemvalue="Application.MyClass" />
-        <item itemvalue="Application.mainClass" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +518,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711353206539</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="BASIC WEBSERVER TO FETCH FILE">
+      <option name="closed" value="true" />
+      <created>1711389674141</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1711389674141</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
