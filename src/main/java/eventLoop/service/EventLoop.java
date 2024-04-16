@@ -5,10 +5,7 @@ import eventLoop.model.EventResult;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 
 public class EventLoop {
@@ -17,8 +14,8 @@ public class EventLoop {
 
     private final Map<String, Function<String, String>> handlers;
 
-    public EventLoop(Map<String, Function<String, String>> handlers) {
-        this.handlers = handlers;
+    public EventLoop() {
+        this.handlers = new HashMap<>();
         this.eventDeque = new ArrayDeque<>();
         this.processedEvents = new LinkedList<>();
     }
