@@ -1,6 +1,15 @@
 package eventLoop.model;
 
+
 public class EventResult {
+    @Override
+    public String toString() {
+        return "EventResult{" +
+                "key='" + key + '\'' +
+                ", result='" + result + '\'' +
+                '}';
+    }
+
     private String key;
 
     private String result;

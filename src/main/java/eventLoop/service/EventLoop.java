@@ -3,6 +3,8 @@ package eventLoop.service;
 import eventLoop.model.Event;
 import eventLoop.model.EventResult;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -29,4 +31,35 @@ public class EventLoop {
     public void dispatch(Event event) {
         eventDeque.add(event);
     }
+
+    public void run() {
+        Event event = eventDeque.pop();
+        if (handlers.containsKey(event.getKey())) {
+            Instant startTime = Instant.now();
+            if (event.isAsynchronous()) {
+                processAsync(event);
+            } else {
+                processSync(event);
+            }
+
+            Instant endTime = Instant.now();
+            System.out.println(" eventLoop was blocked for time ::  " + Duration.between(startTime, endTime).toMillis());
+
+        } else {
+            System.out.println("no handlers found ");
+        }
+
+    }
+
+    private void processSync(Event event) {
+        EventResult result = new EventResult(event.getKey(), handlers.get(event.getKey()).apply(event.getData()));
+        System.out.printf("output:: " + result);
+    }
+
+    private void processAsync(Event event) {
+        new Thread(() -> {
+            processedEvents.add(new EventResult(event.getKey(), handlers.get(event.getKey()).apply(event.getData())));
+        });
+    }
+
 }
