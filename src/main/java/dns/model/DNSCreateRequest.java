@@ -128,5 +128,11 @@ public class DNSCreateRequest {
         DatagramPacket packet = new DatagramPacket(dnsFrame, dnsFrame.length, address, 53);
 
         socket.send(packet);
+        socket.receive(packet);
+        System.out.println(packet);
+        byte[] data = packet.getData();
+        int offset = packet.getOffset();
+        int length = packet.getLength();
+        System.out.println(new String(data, offset, length));
     }
 }

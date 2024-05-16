@@ -1,8 +1,8 @@
-import java.time.Instant;
-
 /*Construtor call super */
 
-public class Super extends Parent {
+import java.time.Duration;
+
+public class Super {
 
     public Super() {
         overrideMe();
@@ -15,11 +15,6 @@ public class Super extends Parent {
 }
 
 class Sub extends Super {
-    private final Instant instant;
-
-    public Sub() {
-        instant = Instant.now();
-    }
 
     @Override
     public void overrideMe() {
@@ -27,16 +22,20 @@ class Sub extends Super {
     }
 
     public static void main(String[] args) {
-        Parent sub = new Sub();
+        Sub sub = new Sub();
         sub.overrideMe();
 
-        B a = new B();
-        a.var1 = 10;
-        System.out.println(a);
+        Duration duration = Duration.ofSeconds(1000);
+        System.out.println(duration.toMinutes());
+
     }
 }
 
 class Parent {
+    public Parent() {
+        System.out.println("parent");
+        overrideMe();
+    }
 
     public void overrideMe() {
         System.out.println("parent");
@@ -45,15 +44,34 @@ class Parent {
 
 
 class A {
-    int var1;
+    public int var1;
 }
 
 class B extends A {
-    @Override
-    public String toString() {
-        return "B{" +
-                "var1=" + var1 +
-                '}';
+
+    public static void main(String[] args) {
+        Integer x = 10;
+        int y = 11111;
+
+        int[] r = new int[3];
+        System.out.println(x);
+        System.out.println(y);
+
+        fun(x, y, r);
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(r[0]);
+
+    }
+
+    public static void fun(int x, Integer y, int[] r) {
+        x++;
+        y++;
+        r[0] = 115;
+        System.out.println(x);
+        System.out.println(y);
+
+
     }
 }
 
