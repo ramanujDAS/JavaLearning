@@ -20,9 +20,9 @@ class OddEvenThreads implements Runnable {
         int number = isEvenNumber ? 2 : 1;
         while (number <= max) {
             if (isEvenNumber) {
-                print.printOdd(number);
+                print.printOdd1(number);
             } else {
-                print.printEven(number);
+                print.printEven1(number);
             }
             number += 2;
         }

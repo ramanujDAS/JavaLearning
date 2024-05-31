@@ -1,25 +1,39 @@
-import java.text.ParseException;
-
 public interface Alarm {
 
-    default String turnAlarmOn() {
-        return "Turning the alarm on.";
-    }
 
-    default String turnAlarmOff() {
-        return "Turning the alarm off.";
-    }
 }
 
-class Car implements Alarm {
-
-    public static void main(String[] args) throws ParseException {
-        Model model = new Model();
+class Car {
 
 
-        System.out.println(model);
+    public static void main(String[] args) {
+        Model obj1 = new Model();
+        Model obj2 = new Model();
+        Thread thread1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    obj2.setTest("ram");
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+        Thread thread2 = new Thread(() -> {
+            try {
+                obj1.setTest("anuj");
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        });
+
+        thread1.start();
+        thread2.start();
     }
+
+
 }
+
 
 class Model {
     private String test;
@@ -28,8 +42,12 @@ class Model {
         return test;
     }
 
-    public void setTest(String test) {
-        this.test = test;
+    public void setTest(String test) throws InterruptedException {
+        synchronized (Model.class) {
+            this.test = test;
+            System.out.println("in object " + Thread.currentThread().getName());
+            Thread.sleep(2000);
+        }
     }
 
     @Override

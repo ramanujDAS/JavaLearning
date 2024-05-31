@@ -33,4 +33,33 @@ class Printer {
         }
 
     }
+
+
+    synchronized void printOdd1(int number) {
+        while (!isOdd) {
+            try {
+                wait();
+            } catch (Exception e) {
+
+            }
+        }
+        System.out.println(Thread.currentThread().getName() + ":" + number);
+        isOdd = false;
+        notify();
+
+    }
+
+    synchronized void printEven1(int number) {
+        while (isOdd) {
+            try {
+                wait();
+            } catch (Exception e) {
+
+            }
+        }
+        System.out.println(Thread.currentThread().getName() + ":" + number);
+        isOdd = true;
+        notify();
+
+    }
 }

@@ -6,15 +6,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        HashMap<Integer[], Integer> uset = new HashMap<>();
-        Integer[] array = new Integer[2];
-        array[0] = 0;
-        array[1] = 1;
-        uset.put(array, 0);
-        Integer[] array1 = new Integer[2];
-        array1[0] = 0;
-        array[1] = 1;
-        System.out.println(array1 + " " + array);
+        System.out.println(String.valueOf(null));
     }
 
     public static String getImmediateNextMonth(int date) {
