@@ -12,7 +12,7 @@ public class MyRunnable implements Runnable {
         testInt++;
         MySharedObject localVariable2 =
                 MySharedObject.sharedInstance;
-        // System.out.println("method one local variable 2" + localVariable2.hashCode() + " " + Thread.currentThread().getName());
+        System.out.println("method one local variable 2" + localVariable2.hashCode() + " " + Thread.currentThread().getName());
         System.out.println("shared Instance variable  object1 :" + localVariable2.object2.hashCode());
         System.out.println("shared object long " + ++localVariable2.member1);
         int a = localVariable2.get();
@@ -29,9 +29,9 @@ public class MyRunnable implements Runnable {
         Integer localVariable1 = new Integer(99);
         localVariable1++;
         testInt++;
-        // System.out.println("method 2 localVariable1 " + localVariable1.hashCode() + " " + Thread.currentThread().getName());
+        System.out.println("method 2 localVariable1 " + localVariable1.hashCode() + " " + Thread.currentThread().getName());
 
-        //System.out.println("testInt " + testInt);
+        System.out.println("testInt " + testInt);
         //... do more with local variable.
     }
 }
